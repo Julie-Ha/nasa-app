@@ -8,7 +8,7 @@ function Home() {
     <div className="home-container">
         <div className="home-text">
           <p>NASA images and videos to explore the outer space</p>
-          <Link to="/" className="home-btn">Discover</Link>
+          <Link to="/Pictures" className="home-btn">Discover</Link>
         </div>
         <img src={rocket} alt="rocket-illustration" className="rocket" />
     </div>
