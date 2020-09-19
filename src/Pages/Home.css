@@ -1,0 +1,35 @@
+.home-container {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    color: #00275E;
+}
+
+.home-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6rem 8rem 0 6rem;
+    height: 100%;
+}
+
+.home-text p {
+    font-size: 32px;
+}
+
+.home-btn {
+    width: 5rem;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #FFAE46;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: #00275E;
+}
+
+.rocket {
+    padding: 6rem 0 0 0;
+}
