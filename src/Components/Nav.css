@@ -5,14 +5,17 @@
   background-color: #00275e;
   display: flex;
   align-items: center;
+  justify-content: center;
   font-size: 18px;
   letter-spacing: 1px;
+  z-index: 100;
 }
 
 .logo {
-  height: 3rem;
+  height: 3.5rem;
   width: auto;
-  margin: 1rem 1rem 1rem 2rem;
+  margin-left: 2rem;
+  margin-top: 0.25rem;
 }
 
 .nav-links {

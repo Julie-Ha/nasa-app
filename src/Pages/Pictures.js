@@ -1,41 +1,43 @@
 import React, { useState } from "react";
 import "./Pictures.css";
-import useImagesSearch from '../Components/useImagesSearch';
-
-import InfiniteScroll from "react-infinite-scroll-component";
+import useImagesSearch from "../Components/useImagesSearch";
 
 function Pictures() {
-  const [query, setQuery] = useState('');
-  const [pageNumber, setPageNumber] = useState(1);
-  
+  const [query, setQuery] = useState("");
+
+  const { pictures, loading, error } = useImagesSearch(query);
+
   function handleSearch(e) {
     setQuery(e.target.value);
-    setPageNumber(1);
   }
-  
-  const {
-    pictures,
-    hasMore,
-    loading,
-    error
-  } = useImagesSearch(query, pageNumber);
-  
 
   return (
     <div className="pictures-container">
-      <input className="searchbar" type="text" onChange={handleSearch} placeholder="Search..."/>
-      <div className="pictures-content">
-      {
-        pictures.map(picture => {
-          if (picture.links) {
-            return <img src={picture.links[0].href} />
+      <input
+        className="searchbar"
+        type="text"
+        onChange={handleSearch}
+        value={query}
+        placeholder="Search..."
+      />
 
-          }
-        })
-      }
-      </div>
-      <div>{loading && 'Loading...'}</div>
-      <div>{error && 'Error'}</div>
+          <div className="cards-items">
+            {pictures.map((picture, index) => {
+              if (picture.links) {
+                return (
+                  <div className="cards-item" key={index}>
+                        <img
+                          className="cards-item-img"
+                          src={picture.links[0].href}
+                          alt={picture.links[0].href}
+                        />
+                  </div>
+                );
+              }
+            })}
+          </div>
+      {/* <div className="loading">{loading && "Loading..."}</div> */}
+      <div>{error && "Error"}</div>
     </div>
   );
 }

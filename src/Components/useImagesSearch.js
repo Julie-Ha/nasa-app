@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 
-function useImagesSearch(query, pageNumber) {
+function useImagesSearch(query) {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
     const [pictures, setPictures] = useState([]);
-    const [hasMore, setHasMore] = useState(false);
-    
+
     useEffect(() => {
         setLoading(true);
         setError(false);
@@ -19,19 +18,15 @@ function useImagesSearch(query, pageNumber) {
               cancelToken: new axios.CancelToken(c => cancel = c)
             }
             ).then(res => {
-                // setPictures(prevPictures => {
-                //     return [...prevPictures, res.data.collection.items]
-                // });
                 setPictures(res.data.collection.items);
-                setHasMore(res.data.collection.items > 0);
                 setLoading(false);
             }).catch(e => {
                 if (axios.isCancel(e)) return
             })
             return () => cancel();
-      }, [query, pageNumber]);
+      }, [query]);
     
-    return { loading, error, pictures, hasMore};
+    return { loading, error, pictures};
 }
 
 export default useImagesSearch

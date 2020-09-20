@@ -1,0 +1,25 @@
+.about-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    color: #00275E;
+    font-weight: 700;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    margin: -5rem 4rem 0 6rem;
+}
+
+.about-text p {
+    font-size: 32px;
+}
+
+.astronaut {
+    margin-top: 2rem;
+    width: 80%;
+}
