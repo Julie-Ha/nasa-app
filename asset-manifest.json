@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/nasa-app/static/css/main.d4e1fc64.chunk.css",
+    "main.js": "/nasa-app/static/js/main.8a75d6d3.chunk.js",
+    "main.js.map": "/nasa-app/static/js/main.8a75d6d3.chunk.js.map",
+    "runtime-main.js": "/nasa-app/static/js/runtime-main.1c4d3ad0.js",
+    "runtime-main.js.map": "/nasa-app/static/js/runtime-main.1c4d3ad0.js.map",
+    "static/js/2.00cc48a4.chunk.js": "/nasa-app/static/js/2.00cc48a4.chunk.js",
+    "static/js/2.00cc48a4.chunk.js.map": "/nasa-app/static/js/2.00cc48a4.chunk.js.map",
+    "index.html": "/nasa-app/index.html",
+    "precache-manifest.66bd13eea0708d6cedadc3f7e568baad.js": "/nasa-app/precache-manifest.66bd13eea0708d6cedadc3f7e568baad.js",
+    "service-worker.js": "/nasa-app/service-worker.js",
+    "static/css/main.d4e1fc64.chunk.css.map": "/nasa-app/static/css/main.d4e1fc64.chunk.css.map",
+    "static/js/2.00cc48a4.chunk.js.LICENSE.txt": "/nasa-app/static/js/2.00cc48a4.chunk.js.LICENSE.txt",
+    "static/media/Logo.svg": "/nasa-app/static/media/Logo.322e6f11.svg",
+    "static/media/astronaut.svg": "/nasa-app/static/media/astronaut.0debd2e0.svg",
+    "static/media/rocket_launch_.svg": "/nasa-app/static/media/rocket_launch_.0a616663.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1c4d3ad0.js",
+    "static/js/2.00cc48a4.chunk.js",
+    "static/css/main.d4e1fc64.chunk.css",
+    "static/js/main.8a75d6d3.chunk.js"
+  ]
+}
