@@ -23,3 +23,29 @@
     margin-top: 2rem;
     width: 80%;
 }
+
+@media screen and (max-width: 800px) {
+    .about-container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        margin: 0;
+        padding: 2rem 3rem 2rem 3rem;
+    }
+
+    .about-text p {
+      font-size: 18px;
+    }
+
+    .astronaut {
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 0;
+        width: 80%;
+        order: -1;
+    }
+}

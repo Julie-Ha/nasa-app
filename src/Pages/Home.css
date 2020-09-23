@@ -40,3 +40,31 @@
     margin-top: 2rem;
     width: 80%;
 }
+
+@media screen and (max-width: 800px) {
+    .home-container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-text {
+        padding: 2rem 3rem 2rem 3rem;
+    }
+
+    .home-text p {
+      font-size: 18px;
+    }
+    .home-btn {
+        align-self: center;
+    }
+
+    .rocket {
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 0;
+        width: 80%;
+        order: -1;
+    }
+  }

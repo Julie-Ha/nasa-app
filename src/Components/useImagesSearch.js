@@ -7,6 +7,7 @@ function useImagesSearch(query) {
     const [pictures, setPictures] = useState([]);
 
     useEffect(() => {
+      if(query != '') {
         setLoading(true);
         setError(false);
         let cancel;
@@ -24,6 +25,8 @@ function useImagesSearch(query) {
                 if (axios.isCancel(e)) return
             })
             return () => cancel();
+      }
+        
       }, [query]);
     
     return { loading, error, pictures};
