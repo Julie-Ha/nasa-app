@@ -2,7 +2,7 @@
   width: 100%;
   height: 4rem;
   position: fixed;
-  background-color: #00275e;
+  background-color: var(--dark-blue);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,14 +26,14 @@
 }
 
 .nav-links a {
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
   margin: 1rem;
   transition: 0.25s;
 }
 
 .nav-links a:hover {
-  color: #eb773a;
+  color: var(--orange);
   transition: 0.25s;
 }
 

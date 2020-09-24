@@ -3,7 +3,7 @@ import "./App.css";
 import Nav from "./Components/Nav";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
-import Pictures from "./Pages/Pictures";
+import Images from "./Pages/Images";
 import NotFound from "./Pages/NotFound";
 import { Route, Switch } from "react-router-dom";
 
@@ -13,16 +13,16 @@ function App() {
     <Nav/>
         <Switch>
           <Route
-            path={process.env.PUBLIC_URL + "/"}
+            path="/"
             exact
             component={Home}
           />
           <Route
-            path={process.env.PUBLIC_URL + "/pictures"}
-            component={Pictures}
+            path="/images"
+            component={Images}
           />
           <Route
-            path={process.env.PUBLIC_URL + "/about"}
+            path="/about"
             component={About}
           />
           <Route component={NotFound} />

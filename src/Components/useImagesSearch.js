@@ -2,13 +2,11 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 function useImagesSearch(query) {
-    const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
     const [pictures, setPictures] = useState([]);
 
     useEffect(() => {
-      if(query != '') {
-        setLoading(true);
+      if(query !== '') {
         setError(false);
         let cancel;
           axios(
@@ -20,7 +18,6 @@ function useImagesSearch(query) {
             }
             ).then(res => {
                 setPictures(res.data.collection.items);
-                setLoading(false);
             }).catch(e => {
                 if (axios.isCancel(e)) return
             })
@@ -29,7 +26,7 @@ function useImagesSearch(query) {
         
       }, [query]);
     
-    return { loading, error, pictures};
+    return { error, pictures};
 }
 
 export default useImagesSearch

@@ -5,7 +5,7 @@
     grid-template-rows: 1fr;
     justify-content: center;
     align-items: center;
-    color: #00275E;
+    color: var(--dark-blue);
     font-weight: 700;
 }
 

@@ -5,7 +5,7 @@
     grid-template-rows: 1fr;
     justify-content: center;
     align-items: center;
-    color: #00275E;
+    color: var(--dark-blue);;
     font-weight: 700;
 }
 
@@ -23,16 +23,16 @@
     width: 5rem;
     margin-top: 1.5rem;
     padding: 1rem;
-    background-color: #FFAE46;
+    background-color: var(--yellow);
     text-align: center;
     text-decoration: none;
     font-size: 20px;
-    color: #00275E;
+    color: var(--dark-blue);
     transition: 0.4s;
 }
 
 .home-btn:hover {
-    background-color: #EB773A;
+    background-color: var(--orange);
     transition: 0.4s;
 }
 

@@ -16,8 +16,8 @@ function Nav() {
           </NavLink>
         </li>
         <li>
-          <NavLink activeClassName="active" exact to="/pictures">
-            Pictures
+          <NavLink activeClassName="active" exact to="/images">
+            Images
           </NavLink>
         </li>
         <li>

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import "./Pictures.css";
+import "./Images.css";
 import useImagesSearch from "../Components/useImagesSearch";
 
-function Pictures() {
+function Images() {
   const [query, setQuery] = useState("");
 
-  const { pictures, loading, error } = useImagesSearch(query);
+  const { pictures, error } = useImagesSearch(query);
 
   function handleSearch(e) {
     setQuery(e.target.value);
@@ -36,10 +36,9 @@ function Pictures() {
               }
             })}
           </div>
-      {/* <div className="loading">{loading && "Loading..."}</div> */}
       <div>{error && "Error"}</div>
     </div>
   );
 }
 
-export default Pictures;
+export default Images;

@@ -7,7 +7,7 @@
   width: 50%;
   height: 3rem;
   border: 1px solid #a4a4a4;
-  color: #00275e;
+  color: var(--dark-blue);
   border-radius: 50px;
   font-size: 20px;
   padding: 8px 20px;
@@ -24,7 +24,7 @@
 
 .cards-item {
   margin: 0 1rem;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 40px;
   width: 350px;
   height: 350px;
