@@ -7,7 +7,7 @@ function Home() {
   return (
     <div className="home-container">
         <div className="home-text">
-          <p>NASA images and videos to explore the outer space</p>
+          <p>NASA images and videos</p>
           <Link to="/Pictures" className="home-btn">Discover</Link>
         </div>
         <img src={rocket} alt="rocket-illustration" className="rocket" />
